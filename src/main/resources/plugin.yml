@@ -1,0 +1,19 @@
+name: SFCalculator
+version: ${project.version}
+main: top.ageofelysian.sfcalculator.SFCalculator
+depend: [Slimefun, CS-CoreLib]
+authors: [ajan_12]
+description: A calculator that calculates the ingredients of the recipes of plugin SlimeFun.
+
+commands:
+  sfcalculator:
+    description: Main command that's used to calculate a recipe or see available recipes.
+    aliases: [sfcalc, sfc, slimefuncalculator, slimefuncalc, slimefunc]
+    usage: /sfcalculator <item name> <item amount> OR /sfcalculator <list>
+    permission: sfcalculator.use
+    permission-message: "§4You do not have permission to do this!"
+
+permissions:
+  sfcalculator.use:
+    description: Main permission node that allows the player to use /sfcalculator.
+    default: true
